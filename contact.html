@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>St.Wilfred Pg College</title>
+
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 1550px;
+            height: 560px;
+        }
+
+        .home__social {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .home__social-icon {
+            width: auto;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #0077b5;
+        }
+
+        .home__social-icon:hover {
+            color: #4070f4;
+        }
+
+        a i {
+            transition: all 0.2s
+        }
+
+        a:hover i {
+            transform: scale(1.5);
+        }
+
+        @media screen and (min-width: 768px) {
+            .home__social {
+                padding-top: 0;
+                padding-bottom: 10rem;
+                flex-direction: row;
+                align-self: flex-end;
+            }
+
+            .home__social-icon {
+                margin-bottom: 0;
+                margin-right: 1rem;
+
+            }
+        }
+
+        .footer {
+            background-color: #020303;
+            color: #fff;
+            text-align: center;
+            font-weight: 50;
+            padding: 2rem 0;
+            font-family: sans-serif;
+        }
+
+        .footer__title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #0077b5;
+            text-transform: uppercase;
+        }
+
+        .footer__social {
+            margin-bottom: 2rem;
+        }
+
+        .footer__icon {
+            font-size: 1.5rem;
+            color: rgb(255, 255, 255);
+            margin: 0 1rem;
+        }
+
+        .footer__social a:hover i {
+            color: #00acee;
+        }
+
+        .footer__social .fa-twitter {
+            color: #00acee;
+        }
+
+        .footer__social .fa-instagram {
+            color: #bc2a8d;
+        }
+
+        .footer__social .fa-twitter {
+            color: #00acee;
+        }
+
+        .footer__social .fa-facbook {
+            color: #bc2a8d;
+        }
+
+        .footer__social .fa-youtube {
+            color: #ed0b62;
+        }
+
+        .phone a i:hover {
+            color: blue;
+            font-family: sans-serif;
+
+        }
+
+        #contatti {
+            background-color: #032a35;
+            letter-spacing: 2px;
+        }
+
+        #contatti a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 575.98px) {
+
+            #contatti {
+                padding-bottom: 800px;
+            }
+
+            #contatti .maps iframe {
+                width: 100%;
+                height: 450px;
+            }
+        }
+
+
+        @media (min-width: 576px) {
+
+            #contatti {
+                padding-bottom: 800px;
+            }
+
+            #contatti .maps iframe {
+                width: 100%;
+                height: 450px;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            #contatti {
+                padding-bottom: 350px;
+            }
+
+            #contatti .maps iframe {
+                width: 100%;
+                height: 850px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #contatti {
+                padding-bottom: 200px;
+            }
+
+            #contatti .maps iframe {
+                width: 100%;
+                height: 700px;
+            }
+        }
+
+
+        #author a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+    </style>
+
+</head>
+
+<body>
+     <!--===== Navbar =====-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">St.Wilfred</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="boot.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ourlegacy.html">Our legacy</a>
+                        <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+                        <a class="dropdown-item" href="Certificate.html">Certificate & Affiliation</a>
+                        <a class="dropdown-item" href="#">Gallery</a>
+                        <div class="dropdown-divider"></div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Courses Enroll
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Bca.html">Bca</a>
+                        <a class="dropdown-item" href="Bteach.html">B.Teach</a>
+                        <a class="dropdown-item" href="Barch.html">B.Arch</a>
+                        <a class="dropdown-item" href="llb.html">LLB</a>
+                        <a class="dropdown-item" href="iti.html">ITI</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Scholarship</a>
+                        <a class="dropdown-item" href="#">Sports</a>
+                    </div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+ <!--==== Contact info =====-->
+    <div class="row" id="contatti">
+        <div class="container mt-5">
+
+            <div class="row" style="height:550px;">
+                <div class="col-md-6 maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.4419710877482!2d74.74950541484422!3d26.538065883290475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396bef4555555555%3A0xe13004544e162af1!2sSt.%20Wilfred&#39;s%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1672685103124!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-uppercase mt-3 font-weight-bold text-white">C O N T A C T U,S</h2>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mt-2" placeholder="Full Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mt-2" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control mt-2" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control mt-2" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        placeholder="Your Massage" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-light" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-white">
+                        <h2 class="text-uppercase mt-4 font-weight-bold">Address</h2>
+
+                        <i class="fas fa-phone mt-3"></i> <a href="tel:+">9214210692</a><br>
+                        <i class="fa fa-envelope mt-3"></i> <a
+                            href="mailto:switajmer@gmail.com">switajmer@gmail.com</a><br>
+                        <i class="fas fa-globe mt-3">
+                        </i>ST. WILFRED'S PG COLLAGE
+                        NEAR BALAJI TEMPLE, GEGAL, JAIPUR RD,
+                        AJMER, RAJASTHAN 305023<br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">St.Wilfred Pg Collage</p>
+        <p>St. Wilfred’s Group of Colleges is one of the premier academic institutions in North India.. Students from
+            all streams are chiselled here and excel in the chosen areas of their interest. Established with the vision
+            to instill a sense of responsibility among the students to participate in citizenship duties and strive
+            towards common welfare and to nurture overall development of the students through imparting quality
+            education.</p>
+        <p>NEAR BALAJI TEMPLE, GEGAL, JAIPUR RD,
+            AJMER, RAJASTHAN 305023</p>
+        <div class="phone">
+            <a href="tel:9214210692" class="text-white py-2 d-block">
+                <i class="fa fa-phone">
+                </i> 9214210692 (Academic Enquiry)</a>
+
+            <a href="mailto:switajmer@gmail.com" class="text-white  py-2  d-block">
+                <i class="fa fa-envelope">
+                </i> switajmer@gmail.com</a>
+        </div>
+
+        <div class="footer__social">
+            <a class="home__social-icon" href="https://www.facebook.com/swiet.ajmer.52" target="_ blank ">
+                <i class="fa-brands fa-facebook">
+                </i>
+            </a>
+
+            <a class="home__social-icon" href="https://twitter.com/StColleges" target="_blank">
+                <i class="fa-brands fa-twitter">
+                </i>
+            </a>
+
+            <a class="home__social-icon" href="https://www.instagram.com/stwilfredsajmer/" target="_blank">
+                <i class="fa-brands fa-youtube">
+                </i>
+            </a>
+
+            <a class="home__social-icon" href="https://www.instagram.com/stwilfredsajmer/" target="_blank">
+                <i class="fa-brands fa-instagram">
+                </i>
+            </a>
+
+
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="/js/main.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
